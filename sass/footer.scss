@@ -1,0 +1,32 @@
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer {
+    background: #000;
+    .content {
+        padding-bottom:0px; 
+        color: #fff;
+        .copir {
+            padding-top: 36px;
+            width: 50%;
+            float: left;
+        }
+        .firmlogo {
+            width: 50%;
+            float: left;
+            text-align: right;
+            padding-top: 22px;
+            a {
+                width: 93px;
+                height: 40px;
+                display:  inline-block;
+                padding-top: 30px;
+                color: #fff;
+                font-size: 6px;
+                background: url("/images/xpride.png");
+            }
+        }
+    }
+}

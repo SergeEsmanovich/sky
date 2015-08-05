@@ -1,0 +1,101 @@
+.content6 {
+    //  height: 1440px;
+    .content {
+        .title {
+            color: #c40000;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 48px;
+            font-weight: lighter;
+            &.first {
+                padding-top: 126px;
+            }
+        }
+        $width:1130px;
+        .left_block {
+            width: 364px;
+            img{
+            	width:100%;
+            }
+        }
+        .right_block {
+            width: $width - 364;
+            p {
+            	padding-left:20px; 
+                font-family: 'Raleway', sans-serif;
+                &:nth-child(1) {
+                    margin-top: 12px;
+                }
+                &:nth-child(3) {
+                    margin-top: 140px;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+    .beehive {
+        padding-left: 124px;
+        .sota {
+            background: url('/images/sota.png');
+            width: 176px;
+            height: 203px;
+            margin-right: 10px;
+            display: block;
+            &:nth-child(even) {
+                // margin-top: 158px;
+                //  margin-left: -279px;
+                float: left;
+            }
+            &:nth-child(odd) {
+                float: left;
+            }
+            div {
+                padding: 10px;
+                padding-top: 54px;
+                text-align: center;
+                img {
+                    width: 100%;
+                    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+                    /* Firefox 10+, Firefox on Android */
+                    filter: gray;
+                    /* IE6-9 */
+                    -webkit-filter: grayscale(100%);
+                    /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+                    &:hover {
+                    	cursor:pointer;
+                        filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+                        -webkit-filter: grayscale(0%);
+                    }
+                }
+            }
+            &:nth-of-type(22) {
+                background: url('/images/sota_red.png');
+                div {
+                    color: #fff;
+                    padding-top: 88px;
+                }
+            }
+            &:nth-of-type(10) {
+                div {
+                    padding: 15px;
+                    padding-top: 54px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        span.clear {
+            display: block;
+        }
+        .sota+.clear:nth-of-type(even) +.sota {
+            margin-left: 0px;
+        }
+        .sota+.clear:nth-of-type(odd) +.sota {
+            margin-left: -93px;
+        }
+        .sota+.clear ~.sota {
+            margin-top: -44px;
+        }
+    }
+}

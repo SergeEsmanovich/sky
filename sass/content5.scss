@@ -1,0 +1,85 @@
+.content5 {
+    .phones {
+        position: absolute;
+        width: 100%;
+        padding-top: 120px;
+        .left_block {
+            width: 324px;
+            height: 374px;
+            background: url('/images/maps_bg.png');
+            .social_phone {
+                text-align: center;
+                padding-top: 35px;
+                padding-bottom: 50px;
+                a {
+                    background: url('/images/social_phone.png');
+                    width: 28px;
+                    height: 30px;
+                    display: inline-block;
+                    &:nth-child(2) {
+                        background-position: -30px 0px;
+                    }
+                    ;
+                    &:nth-child(3) {
+                        background-position: -60px 0px;
+                    }
+                    ;
+                }
+            }
+            .logo_phone {
+                background: url('/images/logo_phone.png');
+                width: 284px;
+                height: 53px;
+                margin: 0px auto;
+            }
+            .phone {
+                text-align: center;
+                margin-bottom: 40px;
+                margin-top: 35px;
+            }
+            .callback {
+                text-align: center;
+                a {
+                    display: inline-block;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    padding: 10px;
+                    padding-left: 22px;
+                    padding-right: 22px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    ;
+                }
+            }
+        }
+        .right_block {
+            padding-left: 35px;
+            width: 806px;
+            padding-top: 94px;
+            .text {
+                span {
+                    color: #fff;
+                    background: #c40000;
+                    display: table;
+                    margin-bottom: 3px;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: bold;
+                    font-size: 36px;
+                    padding: 5px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+            .desc {
+                background: #fff;
+                padding: 10px;
+                p {
+                    color: #000;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
